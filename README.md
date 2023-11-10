@@ -2,7 +2,7 @@
 
 Корманный прибор измерения влажности и температуры,
 работающий на акб. После минуты бездействия уходит в сон и пробуждается по нажатию кнопки.
-![Иллюстрация к проекту](https://github.com/allexmak1/f103_dht_vlaznosti/raw/master/image/image.png)
+![Screnshot](https://https://github.com/allexmak1/f103_dht_vlaznosti/blob/main/image/image.png)
 
 
 ## Hardware 
@@ -29,7 +29,7 @@
 |PB3          |           |               |PA4          |        |       |
 |PB4          | GPIO      | DHT22         |PA3          |        |       |
 |PB5          |           |               |PA2          |        |        |
-|PB6          | I2C       | дисплей       |PA1          | EXTI1  | кнопка с прерыванием для пробуждения из сна|
+|PB6          | I2C       | дисплей       |PA1          | EXTI1  | кнопка |
 |PB7          | I2C       | дисплей       |PA0          | ADC1   | заряд с акб |
 |PB8          |           |               |RESET        |        |       |
 
