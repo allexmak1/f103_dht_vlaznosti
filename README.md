@@ -1,40 +1,44 @@
 # f103_dht_vlaznosti
 
 Корманный прибор измерения влажности и температуры,
-работающий на акб.
+работающий на акб. После минуты бездействия уходит в сон и пробуждается по нажатию кнопки.
+![Иллюстрация к проекту](https://github.com/allexmak1/f103_dht_vlaznosti/raw/master/image/image.png)
+
 
 ## Hardware 
- * STM32F103RET6 (72 MHz SYSCLK)
- * датчик влажности DHT
- * дисплей
- * аккумулятор 
+ * CPU: STM32F103RET6 (72 MHz SYSCLK)
+ * DISPLAY: ssd1306
+ * Датчик влажности: DHT22
+ * АКБ: Li-Ion (3,7v) 
+ * зарядная плата: TP4056
 
 ### Pins
 
-|LCD Board|Nucleo |STM32F411RE| Description       |
-| ------- |:-----:| ---------:|	--------------:	  |
-|VCC      |CN6-4  | -         | 3.3V              |
-|GND      |CN6-6  | -         | GND	              |
-|CS       |CN5-3  | PB6       | D10, Chip Select  |
-|RST      |CN9-5  | PB5       | D4,  LCD Reset    |
-|DC       |CN7-21 | PB7       | Data control      |
-|MOSI     |CN5-4  | PA7       | D11, MOSI         |
-|SCK      |CN5-6  | PA5       | D13, SCK          |
-|LED      |CN7-5  | VDD       | 5V                |
-|MISO     |CN5-5  | PA6       | D12, MISO         |
+|STM32F103REV6|Description |Info          |STM32F103REV6|Description |Info           |
+|----------- :|:-----------|:-------------|------------:|:-----------|:--------------|
+|PB12         |           |               |GND          |        |       |
+|PB13         |           |               |GND          |        |       |
+|PB14         |           |               |3V3          |        |       |
+|PB15         |           |               |PB10         |        |       |
+|PA8          |           |               |PB2          |        |       |
+|PA9          |           |               |PB1          |        |       |
+|PA10         |           |               |PB0          |        |       |
+|PA11         |           |               |PA7          |        |       |
+|PA12         |           |               |PA6          |        |       |
+|PA15         |           |               |PA5          |        |       |
+|PB3          |           |               |PA4          |        |       |
+|PB4          | GPIO      | DHT22         |PA3          |        |       |
+|PB5          |           |               |PA2          |        |        |
+|PB6          | I2C       | дисплей       |PA1          | EXTI1  | кнопка с прерыванием для пробуждения из сна|
+|PB7          | I2C       | дисплей       |PA0          | ADC1   | заряд с акб |
+|PB8          |           |               |RESET        |        |       |
+
 
 ## To-Do
 
  - [x] Закончить проект, протестироть
  - [ ] Подключить более высокоточный датчик
 
-
-## To-Do
-
- - [x] Partial framebuffer 
- - [x] Touchscreen
- - [x] Graphs
- - [ ] FreeRTOS 
 
 ## Resources
 
