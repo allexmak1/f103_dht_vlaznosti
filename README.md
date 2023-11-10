@@ -1,13 +1,8 @@
 # f103_dht_vlaznosti
 
+![Screnshot](https://github.com/allexmak1/f103_dht_vlaznosti/blob/main/image/image.png)
 Корманный прибор измерения влажности и температуры,
 работающий на акб. После минуты бездействия уходит в сон и пробуждается по нажатию кнопки.
-<<<<<<< HEAD
-![Screnshot](https://https://github.com/allexmak1/f103_dht_vlaznosti/blob/main/image/image.png)
-
-=======
-![Screnshot](https://https://github.com/allexmak1/f103_dht_vlaznosti/blob/main/image/image.jpg)
->>>>>>> 85e8b4147fbd93be088205f5b44bb763d2fb7d32
 
 ## Hardware 
  * CPU: STM32F103RET6 (72 MHz SYSCLK)
